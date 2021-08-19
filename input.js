@@ -1,4 +1,3 @@
-
 // Getting input via STDIN
 const readline = require("readline");
 
@@ -16,22 +15,10 @@ inp.on("close", () => {
   //LOGIC HERE
   
   
-var str=userInput[0];
-var temp=" ";
+var num=userInput[0];
 
-for(var i=0;i<str.length;i++)
-{
-    if(i!=str.length)
-     temp+=str.charAt(i)+',';
+temp=parseInt(num);
+console.log(temp);
 
-     
-}
 
-n=temp.replace(/.$/," ");
-
-console.log(n.trim(""));
-
- // console.log(userInput);
-
-  //end-here
 });
